@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 
 def get_weather(city_name):
-    api_key = "d685d36004ce63e66d2ac383c9b649e2"
+    api_key = "Enter API KEY"
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = base_url + "q=" + city_name + "&appid=" + api_key
     response = requests.get(complete_url)
